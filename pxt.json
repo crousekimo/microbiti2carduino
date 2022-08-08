@@ -1,0 +1,15 @@
+{
+    "name": "microbiti2carduino",
+    "version": "0.1",
+    "description": "這是micro:bit用i2控制arduino的積木",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "_locales/zh/microbiti2carduino-strings.json"
+    ],
+    "public": true
+}
