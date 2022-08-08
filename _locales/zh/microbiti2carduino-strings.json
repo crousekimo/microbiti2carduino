@@ -1,5 +1,5 @@
 {
-    "microbiti2carduino|block": "控制arduino",
+    "microbiti2carduino|block": "i2c控制arduino",
     "microbiti2carduino.setpinmode|block": "用i2c設定arduino數位腳位 %pin|為 %XY",
     "microbiti2carduino.setdigital|block": "用i2c設定arduino數位腳位 %pin|的值為 %XY",
     "microbiti2carduino.setpinmode1|block": "用i2c設定arduino數位腳位 %pin|為 %XY",
