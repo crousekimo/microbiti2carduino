@@ -58,7 +58,7 @@ namespace microbiti2carduino {
     }
     
     //% blockId=setdigital2 block="set arduino digital pin  %pin | PWM value to %XY"
-    //% weight=100
+    //% weight=99
     export function setdigital2(pin: digitalpin1, XY: number):void {
         sendi2cmessage("analogWrite="+pin.toString()+","+XY.toString())    
     }
