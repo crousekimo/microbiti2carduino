@@ -56,7 +56,13 @@ namespace microbiti2carduino {
     export function setdigital1(pin: digitalpin, XY: value):void {
         sendi2cmessage("digitalWrite="+pin.toString()+","+XY.toString())    
     }
-     
+    
+    //% blockId=setdigital2 block="set arduino digital pin  %pin | PWM value to %XY"
+    //% weight=101
+    export function setdigital2(pin: digitalpin1, XY: number):void {
+        serial.writeLine("analogWrite="+pin.toString()+","+XY.toString())    
+    }
+	
     function sendi2cmessage(command: string):void {
         for (let index = 0; index <= command.length; index++) {
         	pins.i2cWriteNumber(
