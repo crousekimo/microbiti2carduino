@@ -6,5 +6,6 @@
     "microbiti2carduino.setdigital1|block": "用i2c設定arduino數位腳位 %pin|的值為 %XY",
     "microbiti2carduino.setdigital2|block": "用i2c設定arduino數位腳位 %pin|的PWM輸出值為 %XY",
     "microbiti2carduino.setdigital3|block": "用i2c讀取arduino數位腳位 %pin 的值",
-    "microbiti2carduino.setdigital4|block": "用i2c讀取arduino類比腳位 %pin 的值"
+    "microbiti2carduino.setdigital4|block": "用i2c讀取arduino類比腳位 %pin 的值",
+    "microbiti2carduino.sendifttt|block": "用i2c讓esp32傳送IFTTT key %key | 事件 %event | 值1 %value1 "
 }
