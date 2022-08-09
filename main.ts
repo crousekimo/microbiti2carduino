@@ -66,7 +66,7 @@ namespace microbiti2carduino {
     //% blockId=sendifttt block="send ifttt key %key | event %event | value1 %value1"
     //% weight=98
     export function sendifttt(key: string, event: string, value1: string):void {
-        sendi2cmessage("t="+key+","+event+","+value1)    
+        sendi2cmessage("ifttt="+key+","+event+","+value1)    
     }
 	
     function sendi2cmessage(command: string):void {
