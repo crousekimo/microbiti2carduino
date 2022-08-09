@@ -64,7 +64,7 @@ namespace microbiti2carduino {
     }
 	
     function sendi2cmessage(command: string):void {
-        for (let index = 0; index <= command.length; index++) {
+        for (let index = 0; index <= command.length-1; index++) {
         	pins.i2cWriteNumber(
         	8,
         	command.charCodeAt(index),
