@@ -63,6 +63,12 @@ namespace microbiti2carduino {
         sendi2cmessage("analogWrite="+pin.toString()+","+XY.toString())    
     }
 	
+    //% blockId=sendifttt block="send ifttt key %key | event %event | value1 %value1"
+    //% weight=98
+    export function sendifttt(key: string, event: string, value1: string):void {
+        sendi2cmessage("t="+key+","+event+","+value1)    
+    }
+	
     function sendi2cmessage(command: string):void {
         for (let index = 0; index <= command.length-1; index++) {
         	pins.i2cWriteNumber(
