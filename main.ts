@@ -62,6 +62,21 @@ namespace microbiti2carduino {
     export function setdigital2(pin: digitalpin1, XY: number):void {
         sendi2cmessage("analogWrite="+pin.toString()+","+XY.toString())    
     }
+
+	
+    //% blockId=setdigital3 block="read arduino digital pin  %pin value"
+    //% weight=98
+    export function setdigital3(pin: digitalpin):number {
+        return parseFloat(receivei2cmessage("digitalRead="+pin.toString()))
+    }
+
+    //% blockId=setdigital4 block="read arduino analog pin  %pin value"
+    //% weight=97 
+    export function setdigital4(pin: analogpin):number {
+        return parseFloat(receivei2cmessage("analogRead="+pin.toString()))
+    }   
+		
+	
 	
     //% blockId=sendifttt block="send ifttt key %key | event %event | value1 %value1"
     //% weight=98
