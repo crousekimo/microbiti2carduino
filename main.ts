@@ -77,16 +77,16 @@ namespace microbiti2carduino {
     }   
 
     
-    //% blockId=setcarpin block="arduino car setpin  pin1  %pin1 | pin2 %pin3 | pin3 %pin3 | pin4 %pin4"
+    //% blockId=setcarpin block="arduino car setpin  pin1  %pin1 | pin2 %pin2 | pin3 %pin3 | pin4 %pin4"
     //% weight=96
     export function setcarpin(pin1: digitalpin1, pin2: digitalpin1, pin3: digitalpin1, pin4: digitalpin1):void {
         sendi2cmessage("cars="+pin1.toString()+","+pin2.toString()+","+pin3.toString()+","+pin4.toString())    
     }
 
-    //% blockId=setcarpower block="arduino car power  pin1  %pin1 | pin2 %pin3 | pin3 %pin3 | pin4 %pin4"
+    //% blockId=setcarpower block="arduino car power value1  %value1 | value2 %value2 | value3 %value3 | pin4 %value4"
     //% weight=95
-    export function setcarpower(pin1: digitalpin1, pin2: digitalpin1, pin3: digitalpin1, pin4: digitalpin1):void {
-        sendi2cmessage("carp="+pin1.toString()+","+pin2.toString()+","+pin3.toString()+","+pin4.toString())    
+    export function setcarpower(value1: number, value2: number, value3: number, value4: number):void {
+        sendi2cmessage("carp="+value1.toString()+","+value2.toString()+","+value3.toString()+","+value4.toString())    
     }
     function sendi2cmessage(command: string):void {
         for (let index = 0; index <= command.length-1; index++) {
