@@ -75,8 +75,19 @@ namespace microbiti2carduino {
     export function setdigital4(pin: analogpin):number {
         return parseFloat(receivei2cmessage("analogRead="+pin.toString()))
     }   
-		
-	
+
+    
+    //% blockId=setcarpin block="arduino car setpin  pin1  %pin1 | pin2 %pin3 | pin3 %pin3 | pin4 %pin4"
+    //% weight=96
+    export function setcarpin(pin1: digitalpin1, pin2: digitalpin1, pin3: digitalpin1, pin4: digitalpin1):void {
+        sendi2cmessage("cars="+pin1.toString()+","+pin2.toString()+","+pin3.toString()+","+pin4.toString())    
+    }
+
+    //% blockId=setcarpower block="arduino car power  pin1  %pin1 | pin2 %pin3 | pin3 %pin3 | pin4 %pin4"
+    //% weight=95
+    export function setcarpower(pin1: digitalpin1, pin2: digitalpin1, pin3: digitalpin1, pin4: digitalpin1):void {
+        sendi2cmessage("carp="+pin1.toString()+","+pin2.toString()+","+pin3.toString()+","+pin4.toString())    
+    }
     function sendi2cmessage(command: string):void {
         for (let index = 0; index <= command.length-1; index++) {
         	pins.i2cWriteNumber(
