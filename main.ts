@@ -88,13 +88,19 @@ namespace microbiti2carduino {
     export function setcarpower(value1: number, value2: number, value3: number, value4: number):void {
         sendi2cmessage("carp="+value1.toString()+","+value2.toString()+","+value3.toString()+","+value4.toString())    
     }
-    //% blockId=setcarpower1 block="arduino car power value1  %value1 | value2 %value2 | value3 %value3 | pin4 %value4"
+	
+    //% blockId=setcarpin1 block="arduino car setpin  pin1  %pin1 | pin2 %pin2 | pin3 %pin3 | pin4 %pin4"
     //% weight=94
+    export function setcarpin1(pin1: digitalpin, pin2: digitalpin, pin3: digitalpin, pin4: digitalpin):void {
+        sendi2cmessage("cars="+pin1.toString()+","+pin2.toString()+","+pin3.toString()+","+pin4.toString())    
+    }
+    //% blockId=setcarpower1 block="arduino car power value1  %value1 | value2 %value2 | value3 %value3 | pin4 %value4"
+    //% weight=93
     export function setcarpower1(value1: number, value2: number, value3: number, value4: number):void {
         sendi2cmessage("carp1="+value1.toString()+","+value2.toString()+","+value3.toString()+","+value4.toString())    
     }
     //% blockId=setcarpower2 block="arduino car power value1  %value1 | value2 %value2 | value3 %value3 | pin4 %value4"
-    //% weight=93
+    //% weight=92
     export function setcarpower2(value1: number, value2: number, value3: number, value4: number):void {
         sendi2cmessage("carp2="+value1.toString()+","+value2.toString()+","+value3.toString()+","+value4.toString())    
     }
