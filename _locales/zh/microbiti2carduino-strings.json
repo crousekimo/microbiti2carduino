@@ -8,9 +8,9 @@
     "microbiti2carduino.setdigital3|block": "用i2c讀取arduino數位腳位 %pin 的值",
     "microbiti2carduino.setdigital4|block": "用i2c讀取arduino類比腳位 %pin 的值",
     "microbiti2carduino.sendifttt|block": "用i2c讓esp32傳送IFTTT key %key | 事件 %event | 值1 %value1 ",
-    "microbiti2carduino.setcarpin|block": "用i2c設定arduino小車PWM腳位1 %pin1|PWM腳位2 %pin2|PWM腳位3 %pin3|PWM腳位4 %pin4",
-    "microbiti2carduino.setcarpower|block": "用i2c設定arduino小車PWM腳位1值 %value1|PWM腳位2值 %value2|PWM腳位3值 %value3|PWM腳位4值 %value4",
-    "microbiti2carduino.setcarpin1|block": "用i2c設定arduino小車數位腳位1 %pin1|PWM腳位2 %pin2|數位腳位3 %pin3|PWM腳位4 %pin4",
-    "microbiti2carduino.setcarpower1|block": "用i2c設定arduino小車方向腳位1值 %value1|轉速腳位2值 %value2|方向腳位3值 %value3|轉速腳位4值 %value4",
-    "microbiti2carduino.setcarpower2|block": "用i2c設定arduino小車方向腳位1值 %value1|PWM腳位2值 %value2|方向腳位3值 %value3|PWM腳位4值 %value4"
+    "microbiti2carduino.setcarpin|block": "用i2c設定arduino小車|PWM腳位1 %pin1|PWM腳位2 %pin2|PWM腳位3 %pin3|PWM腳位4 %pin4",
+    "microbiti2carduino.setcarpower|block": "用i2c設定arduino小車|PWM腳位1值 %value1|PWM腳位2值 %value2|PWM腳位3值 %value3|PWM腳位4值 %value4",
+    "microbiti2carduino.setcarpin1|block": "用i2c設定arduino小車|數位腳位1 %pin1|PWM腳位2 %pin2|數位腳位3 %pin3|PWM腳位4 %pin4",
+    "microbiti2carduino.setcarpower1|block": "用i2c設定arduino小車|方向數位腳位1值 %value1|轉速腳位2值 %value2|方向腳位3值 %value3|轉速腳位4值 %value4",
+    "microbiti2carduino.setcarpower2|block": "用i2c設定arduino小車|方向腳位1值 %value1|PWM腳位2值 %value2|方向腳位3值 %value3|PWM腳位4值 %value4"
 }
