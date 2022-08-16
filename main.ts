@@ -88,6 +88,16 @@ namespace microbiti2carduino {
     export function setcarpower(value1: number, value2: number, value3: number, value4: number):void {
         sendi2cmessage("carp="+value1.toString()+","+value2.toString()+","+value3.toString()+","+value4.toString())    
     }
+    //% blockId=setcarpower1 block="arduino car power value1  %value1 | value2 %value2 | value3 %value3 | pin4 %value4"
+    //% weight=94
+    export function setcarpower1(value1: number, value2: number, value3: number, value4: number):void {
+        sendi2cmessage("carp1="+value1.toString()+","+value2.toString()+","+value3.toString()+","+value4.toString())    
+    }
+    //% blockId=setcarpower2 block="arduino car power value1  %value1 | value2 %value2 | value3 %value3 | pin4 %value4"
+    //% weight=93
+    export function setcarpower2(value1: number, value2: number, value3: number, value4: number):void {
+        sendi2cmessage("carp2="+value1.toString()+","+value2.toString()+","+value3.toString()+","+value4.toString())    
+    }
     function sendi2cmessage(command: string):void {
         for (let index = 0; index <= command.length-1; index++) {
         	pins.i2cWriteNumber(
