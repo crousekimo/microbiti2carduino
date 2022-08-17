@@ -1,6 +1,6 @@
 # Microbiti2cArduino
 
-Micro:Bit用i2c控制Arduino積木
+Micro:Bit用 i2c 控制Arduino積木
 
 ## License
 
