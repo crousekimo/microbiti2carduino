@@ -53,12 +53,14 @@ namespace microbiti2carduino {
      
     //% blockId=setdigital1 block="set arduino digital pin  %pin | value to %XY"
     //% weight=100
+    //% XY.min=0 XY.max=1
     export function setdigital1(pin: digitalpin, XY: value):void {
         sendi2cmessage("digitalWrite="+pin.toString()+","+XY.toString())    
     }
     
     //% blockId=setdigital2 block="set arduino digital pin  %pin | PWM value to %XY"
     //% weight=99
+    //% XY.min=0 XY.max=255
     export function setdigital2(pin: digitalpin1, XY: number):void {
         sendi2cmessage("analogWrite="+pin.toString()+","+XY.toString())    
     }
@@ -85,22 +87,34 @@ namespace microbiti2carduino {
 
     //% blockId=setcarpower block="arduino car power|value1  %value1 value2 %value2|value3 %value3 pin4 %value4"
     //% weight=95
+    //% value1.min=0 value1.max=255
+    //% value2.min=0 value2.max=255
+    //% value3.min=0 value3.max=255
+    //% value4.min=0 value4.max=255
     export function setcarpower(value1: number, value2: number, value3: number, value4: number):void {
         sendi2cmessage("carp="+value1.toString()+","+value2.toString()+","+value3.toString()+","+value4.toString())    
     }
 	
     //% blockId=setcarpin1 block="arduino car setpin|pin1  %pin1 pin2 %pin2|pin3 %pin3 pin4 %pin4"
     //% weight=94
-    export function setcarpin1(pin1: digitalpin, pin2: digitalpin, pin3: digitalpin, pin4: digitalpin):void {
+    export function setcarpin1(pin1: digitalpin, pin2: digitalpin1, pin3: digitalpin, pin4: digitalpin1):void {
         sendi2cmessage("cars="+pin1.toString()+","+pin2.toString()+","+pin3.toString()+","+pin4.toString())    
     }
     //% blockId=setcarpower1 block="arduino car power|value1  %value1 value2 %value2|value3 %value3 pin4 %value4"
     //% weight=93
+    //% value1.min=0 value1.max=1
+    //% value2.min=0 value2.max=255
+    //% value3.min=0 value3.max=1
+    //% value4.min=0 value4.max=255
     export function setcarpower1(value1: number, value2: number, value3: number, value4: number):void {
         sendi2cmessage("carp1="+value1.toString()+","+value2.toString()+","+value3.toString()+","+value4.toString())    
     }
     //% blockId=setcarpower2 block="arduino car power|value1 %value1 value2 %value2|value3 %value3 pin4 %value4"
     //% weight=92
+    //% value1.min=0 value1.max=1
+    //% value2.min=0 value2.max=255
+    //% value3.min=0 value3.max=1
+    //% value4.min=0 value4.max=255
     export function setcarpower2(value1: number, value2: number, value3: number, value4: number):void {
         sendi2cmessage("carp2="+value1.toString()+","+value2.toString()+","+value3.toString()+","+value4.toString())    
     }
