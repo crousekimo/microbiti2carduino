@@ -1,7 +1,7 @@
 {
     "name": "microbiti2carduino",
     "version": "0.1",
-    "description": "這是micro:bit用i2控制arduino的積木",
+    "description": "這是micro:bit用I2C控制arduino的積木",
     "license": "MIT",
     "dependencies": {
         "core": "*"
